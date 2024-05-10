@@ -4,11 +4,9 @@ const contentInput = document.querySelector('#content');
 const submitButton = document.querySelector('#submit');
 const emptyParagraph = document.querySelector('#paragraph');
 
-const inputs = [];
 
 function displayMessage(type, message) {
     emptyParagraph.textContent = message;
-    emptyParagraph.setAttribute('class', type);
 }
   // create blogInfo object from submission
   const blogInfo = {
@@ -27,19 +25,17 @@ function displayMessage(type, message) {
   submitButton.addEventListener('click', function (event) {
     event.preventDefault();
 
-    if (nameInput === '') {
+    if (blogInfo.userName === '') {
         displayMessage('error', 'Username cannot be blank');
-      } else if (titleInput === '') {
+      } else if (blogInfo.title === '') {
         displayMessage('error', 'Blog title cannot be blank');
-      } else if (contentInput === '') {
+      } else if (blogInfo.content === '') {
         displayMessage('error', 'Blog content cannot be blank');
       } else {
-      
-
-  storeInputs(inputs);
-  window.location.href = './blog.html';
+        storeInputs(blogInfo);
+        window.location.href = './blog.html';
       }
 
-  storeInputs(blogInfo);
+  
 });
 
