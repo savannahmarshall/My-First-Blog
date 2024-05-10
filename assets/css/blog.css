@@ -1,10 +1,26 @@
 
 body {
     background-color: rgb(178, 203, 249);
+    display: block;
+    margin: 0px;
 }
 
 header {
 
 }
 
+.back-button {
+    padding: 200px;
+}
 
+
+
+footer p {
+    font-size: 20px;
+}
+
+footer a {
+    font-size: 20px;
+    color: black;
+
+}
