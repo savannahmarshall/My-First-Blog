@@ -1,5 +1,5 @@
 const backHome = document.querySelector('#back-button')
-const mainContent = document.querySelector('main-content');
+const mainContent = document.querySelector('#main-content');
 
 backHome.addEventListener('click', function(event) {
     window.location.href = './index.html';
@@ -13,21 +13,21 @@ function renderBlogInputs() {
         const input = totalInputs[i];
 
         const inputBody = document.createElement('div');
-        const inputName = document.createElement ('p');
+        const inputuserName = document.createElement ('p');
         const inputTitle = document.createElement ('p');
         const inputContent = document.createElement ('p');
 
-        main.appendChild(inputBody);
-        inputBody.appendChild(inputName);
+        mainContent.appendChild(inputBody);
+        inputBody.appendChild(inputuserName);
         inputBody.appendChild(inputTitle);
         inputBody.appendChild(inputContent);
 
         inputBody.setAttribute('class', 'input-body');
-        inputName.setAttribute('class', 'input-name');
+        inputuserName.setAttribute('class', 'input-name');
         inputTitle.setAttribute('class', 'input-title');
         inputContent.setAttribute('class', 'input-content');
 
-        inputName.textContent = input.name;
+        inputuserName.textContent = input.userName;
         inputTitle.textContent = input.title;
         inputContent.textContent = input.content;
 
