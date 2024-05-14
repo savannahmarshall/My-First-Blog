@@ -13,23 +13,23 @@ function renderBlogInputs() {
         const input = totalInputs[i];
 
         const inputBody = document.createElement('div');
-        const inputuserName = document.createElement ('p');
         const inputTitle = document.createElement ('p');
         const inputContent = document.createElement ('p');
+        const inputuserName = document.createElement ('p');
 
         mainContent.appendChild(inputBody);
-        inputBody.appendChild(inputuserName);
         inputBody.appendChild(inputTitle);
         inputBody.appendChild(inputContent);
+        inputBody.appendChild(inputuserName);
 
         inputBody.setAttribute('class', 'input-body');
-        inputuserName.setAttribute('class', 'input-name');
         inputTitle.setAttribute('class', 'input-title');
         inputContent.setAttribute('class', 'input-content');
+        inputuserName.setAttribute('class', 'input-name');
 
-        inputuserName.textContent = input.userName;
         inputTitle.textContent = input.title;
         inputContent.textContent = input.content;
+        inputuserName.textContent = `Created by: ${input.userName}`;
 
     };
 
@@ -37,6 +37,27 @@ function renderBlogInputs() {
 }
 
 renderBlogInputs();
+
+
+let lightDark = 'dark';
+const lightDarkButton = document.getElementById('light-dark');
+const body = document.querySelector('body');
+
+lightDarkButton.addEventListener('click', function () {
+    if (mode === 'dark') {
+        mode = 'light';
+        body.setAttribute('class', 'light');
+    } else {
+        mode = 'dark';
+        body.setAttribute('class', 'dark');
+    }
+    
+})
+
+
+
+
+
 
 
 

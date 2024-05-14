@@ -6,14 +6,10 @@ const emptyParagraph = document.querySelector('#paragraph');
 function displayMessage(type, message) {
     emptyParagraph.textContent = message;
 }
-  // Get stored inputs from localStorage
-  let totalInputs = JSON.parse(localStorage.getItem('totalInputs')) || [];
-  function storeInputs(blogInfo) {
-    totalInputs.push(blogInfo);
-    localStorage.setItem('totalInputs', JSON.stringify(totalInputs));
-    }
+
   submitButton.addEventListener('click', function(event) {
     event.preventDefault();
+    
       // create blogInfo object from submission
         let blogInfo = {
             userName: nameInput.value.trim(),

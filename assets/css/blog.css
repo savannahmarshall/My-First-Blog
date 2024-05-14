@@ -1,37 +1,60 @@
 
+:root {
+    --clr-dark: #243447;
+    --clr-light: #eceff3;
+}
+
+body {
+    background-color: rgb(178, 203, 249); 
+    display: block;
+    margin: 0px;
+}
+
+
+.dark {
+    --clr-light: #243447;
+}
+
+.light {
+    --clr-dark: #eceff3;
+}
+
+
 header {
     background-color: rgb(178, 203, 249);
     display: block;
     margin: 0px;
 
 }
+
 h1 {
     font-size: 45px;
     color: white;
     text-align: center;
 }
 
-.theme-toggle {
-        padding-top: 15px;
-        margin-right: 35px;
-        display: block;
-        float: right;
-        background-color:  rgb(178, 203, 249);
+nav {
+    display: block;
+    margin-left: 550px;
 }
 
 
-.theme-toggle img {
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+
+#theme-toggle img {
     height: 100%;
-    width: 200px;
+    width: 100px;
     background-size: cover;
     background-position: center;
-}
-
-
-.container {
-    background-color: rgb(178, 203, 249);
-    display: block;
-    margin: 0px;
+    cursor: pointer;
 }
 
 #back-button {
@@ -48,35 +71,29 @@ h1 {
     font-size: 20px;
 }
 
-/* styling for the page in light mode */
-
-.light {
-    background-color: rgb(178, 203, 249);
-    height: 100vh;
-}
-/* styling for the page in dark mode */
-.dark {
-    background-color:#243447;
-    height: 100vh;
-    color: #bebebe
-}
-
 main {
     display: block;
 }
 
 .input-title {
+    font-weight: bold;
     padding: 5px;
+    text-decoration: underline;
+    
+   
 }
 
 .input-body {
+    border: 2px solid #000000;
     padding: 10px;
     display: flex;
     flex-direction: column;
+    font-size: 30px;
 }
 
 .input-content {
     padding: 15px;
+    font-size: 30px;
     
 }
 
@@ -86,15 +103,13 @@ main {
 
 
 
-
-
-
 footer {
     display: block;
 }
 
 .portfolio-link {
-    font-size: 20px;
+    font-size: 40px;
+    font-weight: bold;
     color: black;
 }
 
