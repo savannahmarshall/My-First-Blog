@@ -44,46 +44,15 @@ const lightDarkButton = document.getElementById('light-dark');
 const body = document.querySelector('body');
 
 lightDarkButton.addEventListener('click', function () {
-    if (mode === 'dark') {
-        mode = 'light';
+    if (lightDark === 'dark') {
+        lightDark = 'light';
         body.setAttribute('class', 'light');
     } else {
-        mode = 'dark';
+        lightDark = 'dark';
         body.setAttribute('class', 'dark');
     }
     
 })
-
-
-
-
-
-
-
-
-
-// // accessing the toggle switch HTML element
-// const themeSwitcher = document.querySelector('theme-switcher');
-// const container = document.querySelector('.container');
-
-
-// // set default mode to dark
-// let mode = 'dark';
-
-// // click event on the toggle switch
-// themeSwitcher.addEventListener('click', function () {
-
-// // if mode is on dark, use light background
-//     if (mode === 'dark') {
-//         mode = 'light';
-//         container.setAttribute ('class', 'light');
-//         }
-// // if mode is on light, use dark background
-//     else {
-//         mode = 'dark';
-//         container.setAttribute('class','dark');
-//     }
-// })
 
 
 
