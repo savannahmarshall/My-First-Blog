@@ -2,7 +2,7 @@ The purpose of this project was to create a two page website where users can inp
 
 While completing this project, I learned how to transfer data from one page to another using localStorage and JavaScript. This was something that was a challenge for me to figure out because there are multiple components and none of the elements will work properly if there is a mistake in the code. I also learned how to create an interactive photo that will change the background of the page to both dark and light when you click on it. In addition, I learned how to create a prompt using JavaScript and create buttons that will toggle between two webpages. 
 
-The link to my project is here: 
+The link to my project is here: https://savannahmarshall.github.io/My-First-Blog/
 
 ![alt text](https://github.com/savannahmarshall/My-First-Blog/blob/main/blog-screenshot-1.png)
 
